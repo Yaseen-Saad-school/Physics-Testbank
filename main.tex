@@ -1,0 +1,2965 @@
+\documentclass[a4paper, 12pt]{extarticle}
+\usepackage[
+  top=0.5cm,
+  bottom=1cm,
+  left=1cm,
+  right=1cm,
+  headheight=17pt,
+  includehead,includefoot,
+  heightrounded,
+]{geometry}
+\usepackage{arabtex}
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{cancel}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx} 
+\usepackage{siunitx} 
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[compact, explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{utf8}
+\usepackage[T1]{fontenc}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+
+\newtheoremstyle{solnss}
+{}                % Space above
+{}                % Space below
+{\shape}          % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\bfseries}       % Theorem head font % (default is \mdseries)
+{.}               % Punctuation after theorem head % default: no punctuation
+{ }               % Space after theorem head
+{}                % Theorem head spec
+
+\theoremstyle{definition}
+% \newtheorem[]{soln}{Solution}[section]
+
+\definecolor{xc5}{RGB}{0, 54, 154}
+
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=20]{download.png} \raisebox{\height}{\centering STEM High School for Boys - 6th of October}}
+\theoremstyle{definition}
+\fancyhead[R]{\raisebox{\height}{\centering \textbf{\textcolor{black}{\textbf{Grade 11 Semester II Physics Test Bank}}} }}
+
+\titleformat{\section}[block]
+  {\bfseries\sffamily}{\\\Large\textcolor{xc5}{\S\thesection }\ \Large #1\\}
+  {0em}{}
+
+\titleformat{\subsection}[block]{\normalsize\bfseries\sffamily}{}{1pt}{#1 \textcolor{xc5}{Problem \thesubsection}:}
+
+\newtcolorbox{prp}{colback=blue!5,enhanced,boxrule=0pt,leftrule=4pt,before skip= 5pt,colframe=xc5,skin=enhancedlast jigsaw,sharp corners}
+
+\begin{document}
+\setcode{utf8}
+
+\include{title}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\\[0.15cm]
+{ \huge \bfseries Table of Contents: }
+
+
+\normalsize\tableofcontents
+\vspace{\fill}
+\begin{center}
+{\Large \<لَا تَنْسَوْنَا مِنْ صَالِحِ دُعَائِكُمْ> }    
+\end{center}
+
+\newpage
+
+% Unit 8: Electromagnetic Induction (Ph.2.08)
+\section{Electromagnetic Induction: Faraday's Law of Induction (Ph.2.08).}
+
+\begin{prp}
+\subsection{}
+A circular loop in the plane of the paper lies in a 3.0 T magnetic field pointing into the paper. The loop’s diameter changes from 100 cm to 60 cm in 0.5 s. What is the magnitude of the average induced emf?  
+\\  
+a) 0.6 V \\  
+b) 2.4 V \\  
+c) 3 V \\  
+d) 240 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Using Faraday’s Law:  
+\[
+|\mathcal{E}| = \left|\frac{\Delta \Phi}{\Delta t}\right| = \frac{B \cdot \pi (r_1^2 - r_2^2)}{\Delta t} \approx 3 \, \text{V}.  
+\]
+\\ \textbf{Answer:} C- 3 V  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+All the following devices depend on electromagnetic induction in their operation, except ...
+\\  
+a) The electric transformer in chargers \\  
+b) The electric generator at power plants \\  
+c) The electric motor in toys \\  
+d) The metal detectors that people walk through at airports.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Electric motors operate via the motor effect, not induction.  \\
+\\ \textbf{Answer:} C- The electric motor in toys.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A wire moving in a magnetic field has NO induced voltage if ...  
+\\  
+a) It is moving along the field direction. \\  
+b) It is made of copper. \\  
+c) It is moving slowly. \\  
+d) The wire is insulated.  
+\end{prp}
+
+\begin{soln} 
+
+\textbf{Soution:} When the Wire is moving a long the field direction the angle between the direction of motion and the field lines is $0$, thus the induced e.m.f $\epsilon = Blv\sin{\theta} =  Blv\sin{0} =  Blv\cdot 0=  0$ \\
+\\ \textbf{Answer:} a) It is moving along the field direction
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A wire parallel to the paper moves downward into a flux density directed into the paper. The induced current will be ...  
+\\  
+a) Directed to the left \\  
+b) Directed to the right \\  
+c) Zero \\  
+d) Opposite to the induced emf.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\\ \textbf{Answer:} b) Directed to the right 
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The magnetic field strength inside a current-carrying coil will be greater if the coil encloses a...........  \\
+A- Vacuum. \\ 
+B- Wooden rod.  \\
+C- Glass rod. \\
+D- Rod of iron.
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+The magnetic field inside a coil is given by:
+\[ B = \mu n I \]
+where: \\
+- $\mu$ is the permeability of the material inside the coil \\
+- $n$ is the number of turns per unit length \\
+- $I$ is the current
+
+The permeability $\mu$ is much higher for ferromagnetic materials like iron ($\mu \gg \mu_0$) compared to vacuum, wood, or glass. Therefore, enclosing an iron rod significantly increases the magnetic field strength.
+
+\\ \textbf{Answer:} D- Rod of iron.
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+% Question 2
+\begin{prp}
+\subsection{}
+A circular loop of wire is placed in a uniform magnetic field perpendicular to the magnetic lines. The strength of the magnetic field is B and the radius of the loop is R. What is the magnetic flux in the loop?  \\
+A- $\dfrac{\pi B}{R^2}$ \\
+B- $\pi BR^2$ \\
+C- $\dfrac{\pi B}{R}$ \\
+D- $\pi BR$
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Magnetic flux $\Phi$ through a loop is given by:
+\[ \Phi = B A \cos\theta \]
+where: \\
+- $B$ is the magnetic field strength \\
+- $A$ is the area of the loop \\
+- $\theta$ is the angle between B and the normal to the plane (0° here since perpendicular)
+
+For a circular loop:
+\[ A = \pi R^2 \]
+\[ \Phi = B (\pi R^2) \cos 0° = \pi BR^2 \]
+
+\\ \textbf{Answer:} B- $\pi BR^2$
+\end{soln}
+
+
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+What is the magnitude of the magnetic field at the core of a 120-turn solenoid of length 0.50 m carrying a current of 2.0 A? \\
+A- $2.4 \times 10^{-4}$ T \\
+B- $2.8 \times 10^{-5}$ T \\ 
+C- $1.2 \times 10^{-6}$ T \\
+D- $6.0 \times 10^{-4}$ T
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+The magnetic field inside a solenoid is given by: \\
+\[ B = \mu_0 n I \]
+where: \\
+- $\mu_0 = 4\pi \times 10^{-7}$ Tm/A \\
+- $n = \frac{120}{0.50} = 240$ turns/m \\
+- $I = 2.0$ A \\
+
+Calculating: 
+\[ B = (4\pi \times 10^{-7})(240)(2.0) \approx 6.0 \times 10^{-4} \text{ T} \] 
+\\ \textbf{Answer:} D- $6.0 \times 10^{-4}$ T
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Solenoid A has length L and N turns, solenoid B has length 2L and N turns, and solenoid C has length L/2 and 2N turns. If each solenoid carries the same current, rank by the strength of the magnetic field in the center of each solenoid from largest to smallest. \\
+A- A, B, C \\ 
+B- A, C, B \\ 
+C- B, C, A \\
+D- C, A, B
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Magnetic field strength depends on turn density ($n = N/L$): \\
+- Solenoid A: $n_A = \dfrac{N}{L}$ \\
+- Solenoid B: $n_B = \dfrac{N}{2L} = \dfrac{1}{2}n_A$ \\ 
+- Solenoid C: $n_C = \dfrac{2N}{\dfrac{L}{2}} = 4n_A$ \\
+
+Field ranking follows turn density: C > A > B \\
+
+\\ \textbf{Answer:} D- C, A, B
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A magnet attracts a piece of iron. The iron can then attract another piece of iron. On the basis of domain alignment, the explanation is... \\
+A- The magnet induces magnetic poles in the 2nd piece then attracts the 1st \\
+B- The magnet induces a current in the 1st piece. \\
+C- The magnet causes domain alignment in the iron. \\
+D- The magnet induces a current in the 2nd piece.
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+The correct explanation involves magnetic domain alignment: \\
+1. External magnet aligns domains in 1st iron piece \\
+2. Aligned domains make 1st piece temporarily magnetic \\
+3. 1st piece can then align domains in 2nd piece \\
+
+\\ \textbf{Answer:} C- The magnet causes domain alignment in the iron.
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A circular coil (diameter 10 cm) produces $5 \times 10^{-5}$ T at center. If stretched to 20 cm solenoid, the new flux density is: \\
+A- $2.5 \times 10^{-5}$ T \\
+B- $5 \times 10^{-5}$ T \\
+C- $1 \times 10^{-5}$ T \\
+D- $10 \times 10^{-5}$ T
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Key principle: Flux conservation. \\
+Original coil field: $B_{\text{coil}} = N\dfrac{\mu_0 I}{2R} =N\dfrac{\mu_0 I}{0.10} = 5 \times 10^{-5}$ T \\
+Solenoid field: $B_{\text{solenoid}} = N\dfrac{\mu_0 I}{L} =N\dfrac{\mu_0 I}{0.2} = N\dfrac{\mu_0 I}{0.10}\cdot\dfrac{1}{2} =  2.5 \times 10^{-5}$ T \\
+For same current and total turns, field reduces by geometry factor. \\
+
+\\ \textbf{Answer:} A- $2.5 \times 10^{-5}$ T
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A long wire carries 1 A current. Magnetic field 2 m away is: \\
+A- $1 \times 10^{-3}$ T \\
+B- $1 \times 10^{-4}$ T \\
+C- $1 \times 10^{-6}$ T \\
+D- $1 \times 10^{-7}$ T
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Field from infinite wire: \\
+\[ B = \frac{\mu_0 I}{2\pi r} = \frac{(4\pi \times 10^{-7})(1)}{2\pi \times 2} = 1 \times 10^{-7} \text{ T} \] \\
+
+\\ \textbf{Answer:} D- $1 \times 10^{-7}$ T
+\end{soln}
+
+
+
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A coil of 100 turns with face area 20 cm$^2$ is placed perpendicular to a uniform magnetic field (0.2 T). If the field direction reverses in 0.2 s, the average induced emf is: \\
+A- 0.2 V \\
+B- 0.4 V \\
+C- 0.6 V \\
+D- 0.8 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Using Faraday's Law: \\
+\[ \epsilon = -N \frac{\Delta \Phi}{\Delta t} \] \\
+\[ \Delta \Phi = BA\cos\theta = (0.2)(20 \times 10^{-4})(\cos 0° - \cos 180°) = 8 \times 10^{-4} \text{ Wb} \] \\
+\[ \epsilon = -100 \left( \frac{8 \times 10^{-4}}{0.2} \right) = 0.4 \text{ V} \] \\
+
+\\ \textbf{Answer:} B- 0.4 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+\begin{prp}
+\subsection{}
+A circular coil (1 turn, 22 cm radius) perpendicular to 0.05 T field is turned 90° in 0.25 s. Average emf generated is: \\
+A- 0.03 V \\
+B- 0.04 V \\
+C- 0.3 V \\
+D- 0.4 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -\frac{\Delta \Phi}{\Delta t} = -\frac{BA(\cos 90° - \cos 0°)}{0.25} \] \\
+\[ A = \pi (0.22)^2 = 0.152 \text{ m}^2 \] \\
+\[ \epsilon = \frac{(0.05)(0.152)(1)}{0.25} = 0.03 \text{ V} \] \\
+
+\\ \textbf{Answer:} A- 0.03 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Solenoid (400 turns, 4 cm$^2$ each) parallel to 0.3 T field. When B increases to 0.5 T in 2 ms: \\
+A- 16 V \\
+B- 8 V \\
+C- 8 V \\
+D- 16 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -N \frac{\Delta B A}{\Delta t} = -400 \left( \frac{0.2 \times 4 \times 10^{-4}}{0.002} \right) = 16 \text{ V} \] \\
+
+\\ \textbf{Answer:} A- 16 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Same solenoid, B decreases to 0.2 T in 2 ms: \\
+A- 6 V \\
+B- 8 V \\
+C- 10 V \\
+D- 12 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -400 \left( \frac{-0.1 \times 4 \times 10^{-4}}{0.002} \right) = 8 \text{ V} \] \\
+
+\\ \textbf{Answer:} B- 8 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Rectangular coil (100 turns, 20 cm × 10 cm) perpendicular to field, turned 90° in 0.2 s generates 0.4 V. Find B: \\
+A- 0.01 T \\
+B- 0.03 T \\
+C- 0.04 T \\
+D- 0.05 T
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -N \frac{BA(\cos 90° - \cos 0°)}{\Delta t} \] \\
+\[ 0.4 = -100 \left( \frac{-B(0.02)}{0.2} \right) \Rightarrow B = 0.04 \text{ T} \] \\
+
+\\ \textbf{Answer:} C- 0.04 T
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Coil (400 turns, 50 cm$^2$) with perpendicular 0.2 T field. If flux vanishes in 0.01 s: \\
+A- 20 V \\
+B- 40 V \\
+C- 60 V \\
+D- 80 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -400 \left( \frac{0 - 0.2 \times 50 \times 10^{-4}}{0.01} \right) = 40 \text{ V} \] \\
+
+\\ \textbf{Answer:} B- 40 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+30 cm copper rod moves at 0.5 m/s in 0.8 T field. Induced emf when: \\
+1. Perpendicular to field \\
+2. Parallel to field \\
+A- 0.12 V | 0.12 V \\
+B- 0.12 V | 0 V \\
+C- 0 V | 0.12 V \\
+D- 0 V | 0 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = B l v \sin\theta \] \\
+1. $\theta = 90° \Rightarrow 0.8 \times 0.3 \times 0.5 = 0.12$ V \\
+2. $\theta = 0° \Rightarrow 0$ V \\
+
+\\ \textbf{Answer:} B- 0.12 V | 0 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Wire (0.5 m) moves at 2 m/s in 0.4 T field, producing 0.336 V. Find angle between v and B: \\
+A- 36° \\
+B- 57° \\
+C- 64° \\
+D- 82°
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = B l v \sin\theta \] \\
+\[ 0.336 = 0.4 \times 0.5 \times 2 \sin\theta \Rightarrow \theta \approx 57° \] \\
+
+\\ \textbf{Answer:} B- 57°
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The electric current of an electromagnet is switched off. The magnetic property will: \\
+A- Remain as it is \\
+B- Become zero \\
+C- Decrease with time for long \\
+D- Increase with time for long
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+An electromagnet requires continuous current to maintain its magnetic field. When current is switched off: \\
+- Magnetic domains randomize immediately \\
+- No residual magnetism (unlike permanent magnets) \\
+
+\\ \textbf{Answer:} B- Become zero
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A wire (0.4 m) moves perpendicular to 0.7 T field, generating 1 V emf. Find velocity: \\
+
+A- 1.79 m/s \\
+B- 3.57 m/s \\
+C- 7.14 m/s \\
+D- 8.32 m/s
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = B l v \] \\
+\[ v = \frac{\epsilon}{Bl} = \frac{1}{0.7 \times 0.4} = 3.57 \text{ m/s} \] \\
+
+\\ \textbf{Answer:} B- 3.57 m/s
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Which law states: "Induced EMF equals time rate of change of magnetic flux"? \\
+. \\
+A. Faraday's law \\
+B. Coulomb's law \\
+C. Kirchhoff's laws \\
+D. Laplace's law 
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+This is the fundamental statement of Faraday's Law of Induction: \\
+\[ \epsilon = -\frac{\Delta\Phi_B}{\Delta t} \] \\
+
+\\ \textbf{Answer:} A. Faraday's law
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Circular loop (B=0.125 T) shrinks at 2 mm/s. Find emf when r=4 cm: \\
+
+A- $0.52\pi \mu$V \\
+B- $20\pi \mu$V \\
+C- $\dfrac{2}{3} \mu$V \\
+D- $\dfrac{3\pi}{2} \mu$V \\
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = \left| \frac{\Delta\Phi}{\Delta t} \right| = B \left| \frac{\Delta A}{ \Delta t} \right| = B \cdot 2\pi r \left| \frac{\Delta r}{\Delta t} \right| \] \\
+\[ = 0.125 \times 2\pi \times 0.04 \times 0.002 = 20\pi \times 10^{-6} \text{V} \] \\
+
+\\ \textbf{Answer:} 2. $20\pi \mu$V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Self-inductance per unit length of solenoid (radius R, n turns/m): \\
+. \\
+1. $\mathcal{L} = \mu_0 n \pi R^2$ \\
+2. $\mathcal{L} = \mu_0 n^2 \pi R^2$ \\
+3. $\mathcal{L} = \mu_0 n^2 \pi R$ \\
+4. $\mathcal{L} = \mu_0 n \pi R$ \\
+5. $\mathcal{L} = \mu_0 n \pi R / 2$
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+For a solenoid: \\
+\[ \mathcal{L} = \mu_0 n^2 A = \mu_0 n^2 (\pi R^2) \] \\
+Per unit length: \\
+\[ \mathcal{L}_{\text{unit length}} = \mu_0 n^2 \pi R^2 \] \\
+
+\\ \textbf{Answer:} 2. $\mathcal{L} = \mu_0 n^2 \pi R^2$
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+% Unit 9: Inductive Elements in DC Circuits (Ph.2.09)
+\section{Back-EMF, Energy Storage, and RL Circuits (Ph.2.09).}
+
+\begin{prp}
+\subsection{}
+Current in a coil is changing at a rate of 100 A/s. If the emf developed in the coil is 0.5 V, what is the self-inductance of the coil?  
+.  
+\\ a) 2 Henry \\  
+b) 5 milli-Henry \\  
+c) 50 Henry \\  
+d) 200 Henry  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+L = \frac{\mathcal{E}}{|\Delta I/\Delta t|} = \frac{0.5}{100} = 0.005 \, \text{H} = 5 \, \text{mH}.  
+\]
+\\ \textbf{Answer:} b) 5 milli-Henry.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Two solenoids X and Y have the same length and diameter. The number of turns in coil X is twice those in coil Y. Self-inductance of coil X relative to coil Y is ...  
+.  
+\\ a) Exactly the same \\  
+b) About half \\  
+c) Two times greater \\  
+d) Four times greater  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\( L \propto N^2 \). Doubling \( N \) quadruples \( L \).  
+\\ \textbf{Answer:} d) Approximately four times greater.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The reverse emf induced across the motor coil during rotation ...   \\  
+\\ a) Keeps the coil rotating in one direction. \\  
+b) Makes the coil rotate at uniform speed. \\  
+c) Makes the motor more powerful. \\  
+d) Gives a push when the coil is perpendicular.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Back EMF opposes current, stabilizing speed.  
+\\ \textbf{Answer:} b) Makes the coil rotate at a uniform speed.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+After DC current flows in an inductor, its intensity becomes constant due to: \\
+
+A- Generation of forward currents \\
+B- Generation of eddy currents \\
+C- Vanishing of self induction \\
+D- Presence of back currents
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+When current stabilizes: \\
+- Back EMF ($\epsilon = -L\frac{\Delta I}{\Delta t}$) vanishes as $\frac{\Delta I}{\Delta t} = 0$ \\
+\\ \textbf{Answer:} C- Vanishing of self induction
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Slow current growth in a solenoid at circuit closing is due to: \\
+. \\
+a) Forward induced current \\
+b) Back induced EMF \\
+c) Energy loss in coil \\
+d) Increased ohmic resistance
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Lenz's Law: \\ 
+\[ \epsilon_{\text{back}} = -L\frac{\Delta I}{\Delta t} \text{ opposes current change} \] \\
+\\ \textbf{Answer:} b) Back induced EMF
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+If turns (N) and length ($\ell$) of inductor double (A constant), new $L$ is: \\
+
+A- $\frac{L}{2}$ \\
+B- $L$ \\
+C- $2L$ \\
+D- $4L$
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ L \propto \frac{N^2}{\ell} \Rightarrow \frac{(2N)^2}{2\ell} = \frac{4}{2}L = 2L \] \\
+\\ \textbf{Answer:} C- $2L$
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+To double solenoid's $L$ (other factors constant): \\
+A- Double turns \\
+B- Double length \\
+C- Double cross-section \\
+D- Remove iron core
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ L = \mu_0 \mu_r \frac{N^2 A}{\ell} \] \\
+Doubling $N$: $L$ becomes $4\times$ (not $2\times$) \\
+Doubling $A$: Directly doubles $L$ \\
+\\ \textbf{Answer:} C- Double cross-sectional area
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Coil ($L=0.1$ H) with iron core will have: \\
+A- $L=0.1$ H \\
+B- $L>0.1$ H \\
+C- $L<0.1$ H \\
+D- Depends on AC current
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Iron core increases permeability ($\mu_r \gg 1$): \\
+\[ L_{\text{new}} = \mu_r L_{\text{air}} \] \\
+\\ \textbf{Answer:} B- Greater than 0.1 H
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Inductor ($L=1$ H, $I=2$ A) produces $4\times10^{-3}$ Wb flux. Find $N$: \\
+A- 200 \\
+B- 300 \\
+C- 500 \\
+D- 1000
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \Phi = LI \Rightarrow N = \frac{LI}{\Phi} = \frac{1 \times 2}{4 \times 10^{-3}} = 500 \] \\
+\\ \textbf{Answer:} C- 500 turns
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Solenoid (100 turns, $\Delta I=4$ A, $\Delta \Phi=0.05$ Wb) has $L$: \\
+A- 4 H \\
+B- 0.5 H \\
+C- 1.25 H \\
+D- 0.2 H
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ L = N \frac{\Delta \Phi}{\Delta I} = 100 \times \frac{0.05}{4} = 1.25 \text{ H} \] \\
+\\ \textbf{Answer:} C- 1.25 H
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Coil ($L=0.03$ H, $\Phi=6\times10^{-4}$ Wb) current vanishes in 0.02 s: \\
+(i) Induced EMF: \\
+A- 3 V \\
+B- 6 V \\
+C- 9 V \\
+D- 12 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = L \frac{\Delta I}{\Delta t} = \frac{N \Delta \Phi}{\Delta t} \] \\
+First find $I_0$: \\
+\[ \Phi = LI/N \Rightarrow I_0 = \frac{N\Phi}{L} = \frac{100 \times 6 \times 10^{-4}}{0.03} = 2 \text{ A} \] \\
+Then: \\
+\[ \epsilon = 0.03 \times \frac{2}{0.02} = 3 \text{ V} \] \\
+\\ \textbf{Answer:} A- 3 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+A 2 H inductor is connected in series with a 10 Ω resistor and a 12 V DC source. At the instant the circuit is closed: \\
+(a) What is the initial current? \\
+(b) What is the initial voltage across the inductor? \\
+(c) After a long time, what is the steady-state current? \\
+. \\
+1. (a) 0 A, (b) 12 V, (c) 1.2 A \\
+2. (a) 1.2 A, (b) 0 V, (c) 1.2 A \\
+3. (a) 0 A, (b) 0 V, (c) 1.2 A \\
+4. (a) 0 A, (b) 12 V, (c) 0 A
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+(a) At t=0, inductor opposes current change $\Rightarrow I(0) = 0$ A \\
+(b) All voltage drops across inductor initially $\Rightarrow V_L(0) = 12$ V \\
+(c) At steady-state, inductor acts as wire $\Rightarrow I = V/R = 12/10 = 1.2$ A \\
+\\ \textbf{Answer:} 1. (a) 0 A, (b) 12 V, (c) 1.2 A
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An RL circuit has $R = 5 \Omega$ and $L = 10$ H. The time constant ($\tau$) is: \\
+. \\
+1. 0.5 s \\
+2. 2 s \\
+3. 50 s \\
+4. 0.2 s
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \tau = \frac{L}{R} = \frac{10}{5} = 2 \text{ s} \] \\
+\\ \textbf{Answer:} 2. 2 s
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+When current through a 0.5 H inductor decreases from 4 A to 0 A in 0.1 s, the induced back EMF is: \\
+. \\
+1. 20 V, opposing current decrease \\
+2. 20 V, aiding current decrease \\
+3. 0.02 V, opposing current decrease \\
+4. 0.02 V, aiding current decrease
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ \epsilon = -L \frac{\Delta I}{\Delta t} = -0.5 \left(\frac{0-4}{0.1}\right) = 20 \text{ V} \] \\
+Lenz's Law: opposes current decrease \\
+\\ \textbf{Answer:} 1. 20 V, opposing current decrease
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A 4 H inductor carries a steady current of 3 A. The energy stored is: \\
+. \\
+1. 6 J \\
+2. 12 J \\
+3. 18 J \\
+4. 36 J
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ U = \frac{1}{2}LI^2 = 0.5 \times 4 \times 3^2 = 18 \text{ J} \] \\
+\\ \textbf{Answer:} 3. 18 J
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The current $I(t)$ in an RL circuit during charging follows: \\
+. \\
+1. Linear increase \\
+2. Exponential decay \\
+3. Exponential growth \\
+4. Step function
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ I(t) = I_{\text{max}}(1 - e^{-t/\tau}) \text{ (exponential growth)} \] \\
+\\ \textbf{Answer:} 3. Exponential growth
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+Two inductors (3 H and 6 H) in series have equivalent inductance: \\
+. \\
+1. 2 H \\
+2. 3 H \\
+3. 6 H \\
+4. 9 H
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ L_{\text{eq}} = L_1 + L_2 = 3 + 6 = 9 \text{ H} \] \\
+\\ \textbf{Answer:} 4. 9 H
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In an RL circuit with $\tau = 4$ s, time to reach 63\% of max current is: \\
+. \\
+1. 1 s \\
+2. 4 s \\
+3. 6 s \\
+4. 8 s
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+By definition, $\tau$ is time to reach $1-e^{-1} \approx 63\%$ \\
+\\ \textbf{Answer:} 2. 4 s
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+During inductor discharge, current $I(t)$: \\
+. \\
+1. Drops linearly to zero \\
+2. Follows $I_0 e^{-t/\tau}$ \\
+3. Remains constant \\
+4. Oscillates
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ I(t) = I_0 e^{-t/\tau} \text{ (exponential decay)} \] \\
+\\ \textbf{Answer:} 2. Follows $I_0 e^{-t/\tau}$
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Why are iron-core inductors used in power supplies? \\
+. \\
+1. Reduce energy storage \\
+2. Increase $L$ via higher $\mu_r$ \\
+3. Eliminate back EMF \\
+4. Decrease resistance
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Iron increases permeability ($\mu_r \gg 1$), boosting $L = \mu_0 \mu_r N^2 A/\ell$ \\
+\\ \textbf{Answer:} 2. Increase $L$ via higher $\mu_r$
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In an RL circuit, voltage across resistor $V_R$ during charging: \\
+. \\
+A- Starts at 0 and rises exponentially \\
+B- Starts at $V_{\text{source}}$ and decays exponentially \\
+C- Is constant \\
+D- Oscillates
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+\[ V_R(t) = I(t)R = V_{\text{source}}(1-e^{-t/\tau}) \text{ (exponential rise)} \] \\
+\\ \textbf{Answer:} A- Starts at 0 and rises exponentially
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Two inductors of 4 H and 6 H are connected in series. What is the equivalent inductance? \\
+A- 2 H \\
+B- 4 H \\
+C- 6 H \\
+D- 10 H
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:} \\
+For series connection: $ L_{eq} = L_1 + L_2 = 4 + 6 = 10 \text{ H} $ \\
+\\ \textbf{Answer:} D- 10 H
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Two inductors of 4 H and 6 H are connected in parallel. What is the equivalent inductance? \\
+A- 2 H \\
+B- 2.4 H \\
+C- 4 H \\
+D- 6 H
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+For parallel connection: 
+$$ \frac{1}{L_{eq}} = \frac{1}{L_1} + \frac{1}{L_2} = \frac{1}{4} + \frac{1}{6} = \frac{5}{12} $$ \\
+$$ \Rightarrow L_{eq} = \frac{12}{5} = 2.4 \text{ H} $$ \\
+\\ \textbf{Answer:} B- 2.4 H
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An RL circuit contains a 10 Ω resistor and a 2 H inductor. What is the time constant of the circuit? \\
+A- 0.2 s \\
+B- 0.5 s \\
+C- 2 s \\
+D- 5 s
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Time constant: 
+$$ \tau = \frac{L}{R} = \frac{2}{10} = 0.2 \text{ s} $$ \\
+\\ \textbf{Answer:} A- 0.2 s
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A 0.8 H inductor experiences a current change from 4 A to 0 A in 0.02 seconds. What is the induced back EMF? \\
+A- 40 V \\
+B- 80 V \\
+C- 160 V \\
+D- 200 V
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Using:
+$$ \epsilon = -L \frac{\Delta I}{\Delta t} = -0.8 \times \frac{(0 - 4)}{0.02} = 160 \text{ V} $$ \\
+\\ \textbf{Answer:} C- 160 V
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In an RL circuit with a 12 V battery, 3 Ω resistor, and 1 H inductor, what is the steady-state current? \\
+A- 0 A \\
+B- 3 A \\
+C- 4 A \\
+D- 12 A
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+At steady state: inductor acts as short, so:
+$$ I = \frac{V}{R} = \frac{12}{3} = 4 \text{ A} $$ \\
+\\ \textbf{Answer:} C- 4 A
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+During charging in an RL circuit, what happens to the voltage across the inductor over time? \\
+A- It increases linearly \\
+B- It decreases exponentially \\
+C- It stays constant \\
+D- It oscillates sinusoidally
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Initial voltage is high (equals supply), then decays exponentially as current builds up. \\
+\\ \textbf{Answer:} B- It decreases exponentially
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A 2 H inductor carries a steady current of 5 A. How much energy is stored in its magnetic field? \\
+
+A- 5 J \\
+B- 10 J \\
+C- 25 J \\
+D- 50 J
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Energy stored:
+$$ U = \frac{1}{2} L I^2 = \frac{1}{2} \cdot 2 \cdot 5^2 = 25 \text{ J} $$ \\
+\\ \textbf{Answer:} C- 25 J
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+When an inductor discharges through a resistor, how does the current behave over time? \\
+A- Linear decay to zero \\
+B- Exponential growth to max value \\
+C- Exponential decay to zero \\
+D- Oscillatory behavior
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Discharging follows exponential decay:
+$$ I(t) = I_0 e^{-t/\tau} $$ \\
+\\ \textbf{Answer:} C- Exponential decay to zero
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Which graph best represents the voltage across an inductor during discharge in an RL circuit? \\
+A- Horizontal line at maximum voltage \\
+B- Straight line decreasing to zero \\
+C- Exponential curve falling to zero \\
+D- Sine wave
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Voltage across inductor decays exponentially as current drops. \\
+\\ \textbf{Answer:} C- Exponential curve falling to zero
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+If resistance in an RL circuit is doubled while keeping inductance constant, what happens to the time constant? \\
+A- Doubles \\
+B- Halves \\
+C- Remains the same \\
+D- Quadruples
+\end{prp}
+\begin{soln}
+\textbf{Solution:} \\
+Since $ \tau = \frac{L}{R} $, doubling R halves the time constant. \\
+\\ \textbf{Answer:} B- Halves
+\end{soln}
+% Unit 10: Energy Transmission (Ph.2.10)
+\section{Production and Transmission of Electrical Energy (Ph.2.10).}
+
+\begin{prp}
+\subsection{}
+AC is more easily distributed than DC because ...  \\  
+a) AC voltage can be stepped up/down with transformers. \\  
+b) Wires have less resistance for AC. \\  
+c) DC needs insulated wires. \\  
+d) AC uses lighter wires.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Transformers enable efficient voltage adjustment for AC.  
+\\ \textbf{Answer:} a) AC voltage can be stepped up and down with transformers.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+What quantity increases in the secondary coil of an ideal step-down transformer?
+\\
+a) Voltage \\  
+b) Power \\  
+c) Current \\  
+d) Frequency  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Step-down transformers reduce voltage but increase current (power conserved).  
+\\ \textbf{Answer:} c) Current.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A shunt generator delivers 450 A at 230 V. The resistance of the shunt field and armature are 50 Ω and 0.03 Ω respectively. The generated emf is:\\ 
+A- 423.6 V \\  
+B- 342.6 V \\  
+C- 243.6 V \\  
+D- 324.6 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+1. Armature Voltage Drop:  
+\[
+V_{\text{armature}} = I \cdot R_{\text{armature}} = 450 \cdot 0.03 = 13.5 \, \text{V}
+\]  
+2. Shunt Field Current:  
+\[
+I_{\text{shunt}} = \frac{V}{R_{\text{shunt}}} = \frac{230}{50} = 4.6 \, \text{A}
+\]  
+3. Generated EMF:  
+\[
+\mathcal{E} = V + V_{\text{armature}} = 230 + 13.5 = 243.5 \, \text{V}
+\]  
+\\ \textbf{Answer:} C- 243.6 V  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A heater is rated as 230 V, 10 kW, AC. The value 230 V refers to:  \\
+A- Peak voltage. \\  
+B- R.M.S voltage. \\  
+C- Average voltage. \\  
+D- None of the above.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Standard AC voltage ratings (e.g., household supplies) use RMS values.  
+\\ \textbf{Answer:} B- R.M.S voltage.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An alternating voltage of maximum value 100 V is applied to a lamp. Which direct voltage would cause the lamp to light with the same brilliance?  \\
+A- 63.7 V \\  
+B- 70.7 V \\  
+C- 100 V \\  
+D- 141.4 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Equivalent DC voltage = RMS voltage:  
+\[
+V_{\text{RMS}} = \frac{V_{\text{peak}}}{\sqrt{2}} = \frac{100}{\sqrt{2}} \approx 70.7 \, \text{V}.
+\]  
+\\ \textbf{Answer:} B- 70.7 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A current-carrying coil is subjected to a uniform magnetic field. The coil will orient so that its plane becomes: \\
+A- Parallel to the magnetic field \\  
+B- Perpendicular to the magnetic field \\  
+C- Inclined at 45° to the magnetic field \\  
+D- Inclined at any arbitrary angle  
+\end{prp}
+
+\begin{soln}
+
+\\ \textbf{Answer:} B- Perpendicular to the magnetic field.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+For a DC motor operating under maximum power transfer, the efficiency is: \\
+A- About 90\% \\  
+B- About 100\% \\  
+C- More than 75\% \\  
+D- Less than 50\%  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At maximum power transfer, efficiency is 50\% (half power lost internally).  
+\\ \textbf{Answer:} D- Less than 50\%.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+With increased speed in a DC motor: \\ 
+A- Back EMF falls, line current increases \\  
+B- Back EMF increases, line current falls \\  
+C- Both back EMF and line current fall \\  
+D- Both back EMF and line current increase  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Higher speed increases back EMF, reducing line current.  
+\\ \textbf{Answer:} B- Back EMF increases but line current falls.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Reversing DC motor direction requires:  
+.  
+A- Reducing field flux \\  
+B- Extra resistance in armature \\  
+C- Reversing both armature and field connections \\  
+D- Reversing either armature or field connections  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Reverse either armature or field winding connections.  
+\\ \textbf{Answer:} D- Reversing connections of either armature or field.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+% Unit 11: Transformers (Ph.2.11)
+\section{Transformers and Mutual Induction (Ph.2.11).}
+
+\begin{prp}
+\subsection{}
+Two ideal transformers are designed for 220 V. One steps up to 1200 V, the other down to 3 V. Which delivers more power?  
+.  
+\\ a) Step-up \\  
+b) Step-down \\  
+c) Both same \\  
+d) Undetermined  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Ideal transformers conserve power (\( P_{\text{primary}} = P_{\text{secondary}} \)).  
+\\ \textbf{Answer:} c) Both are the same.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An ideal transformer has 50 secondary turns and 400 primary turns. If 120 V AC is applied to the primary, the output voltage is ...  
+.  
+\\ a) 8 V \\  
+b) 15 V \\  
+c) 60 V \\  
+d) 240 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\frac{V_s}{V_p} = \frac{N_s}{N_p} \Rightarrow V_s = 120 \cdot \frac{50}{400} = 15 \, \text{V}.  
+\]
+\\ \textbf{Answer:} b) 15 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An emf of 5 mV is induced in a coil when the current in a nearby coil changes by 5 A in 0.1 s. The coefficient of mutual induction between the two coils is: \\
+A- 1 H \\  
+B- 0.1 H \\  
+C- 0.1 mH \\  
+D- 0.001 mH  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+M = \frac{\mathcal{E}}{\Delta I / \Delta t} = \frac{0.005 \, \text{V}}{5 \, \text{A} / 0.1 \, \text{s}} = \frac{0.005}{50} = 0.0001 \, \text{H} = 0.1 \, \text{mH}.
+\]  
+\\ \textbf{Answer:} C- 0.1 mH.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The coefficient of mutual inductance between two coils depends on: \\ 
+A- Separation between the coils \\  
+B- Orientation of the coils \\  
+C- Medium between the coils \\  
+D- All of the above  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Mutual inductance depends on separation, orientation, and medium.  
+\\ \textbf{Answer:} D- All of the above.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The plane in which eddy currents are produced in a conductor is inclined to the plane of the magnetic field at an angle of: \\
+A- 45° \\  
+B- 90° \\  
+C- 135° \\  
+D- 180°  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Eddy currents form in planes  perpendicular  to the magnetic field.  
+\\ \textbf{Answer:} B- 90°.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A step-up transformer with a turns ratio (primary:secondary) of 2:100 operates at 270 V. If the secondary supplies a 3 A load, the primary current is: \\
+A- 0.16 A \\  
+B- 25 A \\  
+C- 100 A \\  
+D- 150 A  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\frac{I_p}{I_s} = \frac{N_s}{N_p} \Rightarrow I_p = I_s \cdot \frac{N_s}{N_p} = 3 \cdot \frac{100}{2} = 150 \, \text{A}.
+\]  
+Answer: D- 150 A.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Maximum mutual inductance between 5 H and 20 H coils (no flux leakage):  \\
+A- 2.5 H \\  
+B- 5.0 H \\  
+C- 7.5 H \\  
+D- 10.0 H  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+M_{\text{max}} = \sqrt{L_1 L_2} = \sqrt{5 \cdot 20} = 10 \, \text{H}.
+\]  
+\\ \textbf{Answer:} D- 10.0 H.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Losses in DC generator windings include:  
+1) Armature Copper Loss, 2) Rotational Loss, 3) Core Losses.  \\
+A- Only 1 \\  
+B- 1 \& 2 \\  
+C- 2 \& 3 \\  
+D- 1, 2 \& 3  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+All three losses occur in DC generators.  
+\\ \textbf{Answer:} D- 1, 2 \& 3.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A transformer (1600 primary turns, 1200 secondary turns, 6 A primary current) has secondary current: \\
+A- 5.48 A \\  
+B- 6.28 A \\  
+C- 7.18 A \\  
+D- 7.98 A  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\frac{N_p}{N_s} = \frac{I_s}{I_p} \Rightarrow I_s = \frac{1600}{1200} \cdot 6 = 8 \, \text{A}.
+\]  
+ Note:  Options likely contain typos.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Device not using mutual induction:  \\
+A- Motor \\  
+B- Transformer \\  
+C- Tesla Coil \\  
+D- Induction Coil  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Motors use electromagnetic induction, not mutual induction.  
+\\ \textbf{Answer:} A- Motor.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+During transformer open-circuit test:  \\
+A- Primary supplied at high voltage \\  
+B- Primary supplied with no-load current \\  
+C- Secondary supplied rated KVA \\  
+D- Primary supplied rated voltage  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Open-circuit test applies  rated voltage  to primary.  
+\\ \textbf{Answer:} D- Primary supplied rated voltage.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Eddy current loss at 200 V, 50 Hz (original 240 W at 160 V, 40 Hz):  \\
+A- 400 W \\  
+B- 275 W \\  
+C- 375 W \\  
+D- 375 W  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+P_{\text{new}} = P_{\text{old}} \cdot \left(\frac{V_{\text{new}}}{V_{\text{old}}}\right)^2 = 240 \cdot \left(\frac{200}{160}\right)^2 = 375 \, \text{W}.
+\]  
+\\ \textbf{Answer:} C- 375 W.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+\section{AC circuits 
+containing 
+resistive elements(Ph.2.12)}
+\begin{prp}
+\subsection{}
+Hot wire ammeter reads:  \\
+A- Peak value \\  
+B- R.M.S value \\  
+C- Average value \\  
+D- None of the above  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Hot wire ammeters measure the  heating effect  of current, which corresponds to the RMS value.  
+\\ \textbf{Answer:} B- R.M.S value.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In an AC circuit, the resistance is 4 Ω and the capacitive reactance is 15 Ω. The impedance is:  \\
+A- 11.5 Ω \\  
+B- 15.5 Ω \\  
+C- 19.5 Ω \\  
+D- 60.5 Ω  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+Z = \sqrt{R^2 + X_C^2} = \sqrt{4^2 + 15^2} = \sqrt{16 + 225} = \sqrt{241} \approx 15.5 \, \Omega.
+\]  
+\\ \textbf{Answer:} B- 15.5 Ω.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The power curve for a purely resistive circuit is zero only when:  \\
+A- Voltage is zero \\  
+B- Current is zero \\  
+C- Both current and voltage are zero \\  
+D- None of these  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+In a purely resistive AC circuit, power \( P = V_{\text{rms}}I_{\text{rms}} \cos\phi \). Since \(\phi = 0\), power is zero only when  both \( V \) and \( I \) are zero  simultaneously.  
+\\ \textbf{Answer:} C- Both current and voltage are zero.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+When are the voltage and current in an LCR-series AC circuit in phase?  \\
+A- \( X_L < X_C \) \\  
+B- \( X_L > X_C \) \\  
+C- \( X_L = X_C \) \\  
+D- Indeterminant  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At resonance (\(X_L = X_C\)), the impedance is purely resistive, and voltage/current are in phase.  
+\\ \textbf{Answer:} C- \( X_L = X_C \).  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+A hot wire ammeter reads 20 A in an AC circuit. The peak value of the current is:  
+.  
+A- \(\frac{20}{\sqrt{2}} \, \text{A}\) \\  
+B- \(20\sqrt{2} \, \text{A}\) \\  
+C- \(5\pi \, \text{A}\) \\  
+D- \(\frac{20}{\pi} \, \text{A}\)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Hot wire ammeters measure  RMS current . Peak current is:  
+\[
+I_{\text{peak}} = I_{\text{RMS}} \cdot \sqrt{2} = 20 \cdot \sqrt{2} \, \text{A}.
+\]  
+\\ \textbf{Answer:} B- \(20\sqrt{2} \, \text{A}\).  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Capacitive reactance is more when:  \\
+
+A- Capacitance is less and frequency of supply is less.
+B- Capacitance is less and frequency of supply is more \\  
+C- Capacitance is more and frequency of supply is less \\  
+D- Capacitance is more and frequency of supply is more  
+\end{prp}
+
+\begin{soln}  
+\\ \textbf{Answer:} A- Capacitance is less and frequency of supply is less.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A pure capacitor of capacitance \(C\) is connected to an AC supply of peak voltage \(V_0\). Which pair of expressions represents the voltage and current?  \\
+A- \(V = V_0 \sin \omega t\), \(I = I_0 \sin \omega t\) \\  
+B- \(V = V_0 \sin \omega t\), \(I = I_0 \cos \omega t\) \\  
+C- \(V = V_0 \sin (\omega t + \pi^2)\), \(I = I_0 \sin \omega t\) \\  
+D- \(V = V_0 \sin (\omega t + \pi^2)\), \(I = I_0 \cos \omega t\)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+In a capacitor,  current leads voltage by 90°  (\(\pi/2\)). Voltage: \(V = V_0 \sin \omega t\), Current: \(I = I_0 \cos \omega t\).  
+\\ \textbf{Answer:} B- \(V = V_0 \sin \omega t\), \(I = I_0 \cos \omega t\).  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The maximum value of alternating voltage is given by:  \\
+A- Coefficient of sine term \\  
+B- Frequency \\  
+C- Alternation \\  
+D- Negative amplitude  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Peak voltage is the coefficient of the sine function.  
+\\ \textbf{Answer:} A- Coefficient of sine term.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\section{Characteristics of Circuits (Ph.2.13)}
+
+\begin{prp}
+\subsection{}
+In a series LCR-circuit, the capacitive reactance is 120 Ω, inductive reactance is 200 Ω, and resistance is 60 Ω. The impedance is:  \\
+A- 100 Ω \\  
+B- 120 Ω \\  
+C- 200 Ω \\  
+D- 250 Ω  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+Z = \sqrt{R^2 + (X_L - X_C)^2} = \sqrt{60^2 + (200 - 120)^2} = \sqrt{3600 + 6400} = 100 \, \Omega.
+\]  
+\\ \textbf{Answer:} A- 100 Ω.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A series resonant band-pass filter has a 2 mH coil (15 Ω winding resistance), 0.005 μF capacitor, and 150 Ω resistor. At center frequency (\(f_0\)), the input voltage is 20V, so the output voltage magnitude is:  
+.  
+A- 10.9 V \\  
+B- 18.75 V \\  
+C- 19.1 V \\  
+D- 20 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At resonance:  
+\[
+Z_{\text{total}} = R_{\text{resistor}} + R_{\text{coil}}} = 150 + 15 = 165 \, \Omega.
+\]  
+\[
+I = \frac{V_{\text{in}}}{Z_{\text{total}}} = \frac{20}{165} \approx 0.1212 \, \text{A}.
+\]  
+\[
+V_{\text{out}}} = I \cdot R_{\text{resistor}}} = 0.1212 \times 150 \approx 18.18 \, \text{V}.
+\]  
+ Closest answer:  B- 18.75 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An RC low-pass filter has \( R = 8.2 \, \Omega \) and \( C = 0.0033 \, \mu\text{F} \). The cutoff frequency is:  
+.  
+A- 7.00 MHz \\  
+B- 5.88 MHz \\  
+C- 4.26 kHz \\  
+D- 6.00 kHz  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+f_c = \frac{1}{2\pi RC} = \frac{1}{2\pi \cdot 8.2 \cdot 0.0033 \times 10^{-6}} \approx 5.88 \, \text{MHz}.
+\]  
+\\ \textbf{Answer:} B- 5.88 MHz.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The input frequency applied to a low-pass filter is:  
+.  
+A- Zero \\  
+B- High \\  
+C- Low \\  
+D- Constant  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Jun 1, 2024 — The input frequency applied to a low pass filter is typically low, allowing signals with frequencies lower than a certain cutoff frequency.  
+\\ \textbf{Answer:} C- Low.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Which component is part of the input in a band-pass filter?  
+.  
+A- Resistor \\  
+B- Capacitor \\  
+C- Inductor \\  
+D- Both A and B  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Band-pass filters often use combinations of  resistors and capacitors  (RC/LC networks) at the input.  
+\\ \textbf{Answer:} D- Both A and B.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A 200 V AC source is fed to a series LCR circuit with \( X_L = 50 \, \Omega \), \( X_C = 50 \, \Omega \), and \( R = 25 \, \Omega \). The potential drop across the inductor is:  
+.  
+A- 100 V \\  
+B- 200 V \\  
+C- 300 V \\  
+D- 400 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At resonance (\( X_L = X_C \)), impedance \( Z = R = 25 \, \Omega \). Current:  
+\[
+I = \frac{V}{Z} = \frac{200}{25} = 8 \, \text{A}.
+\]  
+Voltage across inductor:  
+\[
+V_L = I \cdot X_L = 8 \cdot 50 = 400 \, \text{V}.
+\]  
+\\ \textbf{Answer:} D- 400 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In an LCR circuit at resonance:  
+.  
+A- Current is minimum \\  
+B- Impedance is maximum \\  
+C- Current leads voltage by \( \pi/2 \) \\  
+D- Current and voltage are in phase  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At resonance, impedance is  minimum , current is  maximum , and voltage/current are  in phase .  
+\\ \textbf{Answer:} D- The current and voltage are in the same phase.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A series resonant band-pass filter (2 mH coil, 0.005 μF capacitor, 150 Ω resistor, coil resistance 15 Ω) has an input of 20 V rms. Output voltage at center frequency is:  
+.  
+A- 10.9 V \\  
+B- 18.75 V \\  
+C- 19.1 V \\  
+D- 20 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+Z_{\text{total}} = R_{\text{resistor}} + R_{\text{coil}} = 150 + 15 = 165 \, \Omega, \quad I = \frac{20}{165} \approx 0.1212 \, \text{A}, \quad V_{\text{out}} = 0.1212 \cdot 150 \approx 18.18 \, \text{V}.
+\]  
+\\ \textbf{Answer:} B- 18.75 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A low-pass filter is basically:  
+.  
+A- Differentiating circuit with low time constant \\  
+B- Differentiating circuit with larger time constant \\  
+C- Integrating circuit with low time constant \\  
+D- Integrating circuit with large time constant  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Low-pass filters act as  integrating circuits with large time constants .  
+\\ \textbf{Answer:} D- Integrating circuit with large time constant.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In a series LCR-circuit (\(X_C = 120 \, \Omega\), \(X_L = 200 \, \Omega\), \(R = 60 \, \Omega\)), the impedance is:  
+.  
+A- 100 Ω \\  
+B- 120 Ω \\  
+C- 200 Ω \\  
+D- 250 Ω  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+Z = \sqrt{R^2 + (X_L - X_C)^2} = \sqrt{60^2 + 80^2} = 100 \, \Omega.
+\]  
+\\ \textbf{Answer:} A- 100 Ω.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+% Unit 14: Semiconductors (Ph.2.14)
+\section{Semiconductors and Energy Bands (Ph.2.14).}
+
+\begin{prp}
+\subsection{}
+To make P-type semiconductors, ...  
+.  
+\\ a) Dope with acceptor impurity. \\  
+b) Dope with donor impurity. \\  
+c) Inject electrons. \\  
+d) Inject holes.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+P-type uses acceptors (e.g., boron in silicon).  
+\\ \textbf{Answer:} \\ a) A pure material is doped with an acceptor impurity.  
+\end{soln}
+
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+When a pure silicon crystal is doped with phosphorus atoms, ...  
+.  
+\\ a) Resistivity increases. \\  
+b) Conductivity increases. \\  
+c) Holes exceed electrons. \\  
+d) Crystal becomes negative.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Phosphorus adds free electrons (n-type), increasing conductivity.  
+\\ \textbf{Answer:} d) Its electric conductivity gets higher.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Donor impurity atoms in semiconducting material result in a new:  
+.  
+A- Wide energy band \\  
+B- Narrow energy band \\  
+C- Discrete energy level just above valence band \\  
+D- Discrete energy level just below conduction band  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Donor impurities (e.g., phosphorus in silicon) introduce a discrete energy level  just below the conduction band .  
+\\ \textbf{Answer:} D- Discrete energy level just below conduction band.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The electrical conductivity of a semiconductor increases when radiation of wavelength shorter than 1000 nm is incident. The band gap is:  
+
+A- 2.4 eV \\  
+B- 2.2 eV \\  
+C- 1.2 eV \\  
+D- 0.8 eV  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Band gap energy \(E_g = \frac{hc}{\lambda}\). For \(\lambda < 1000 \, \text{nm}\):  
+\[
+E_g > \frac{1240 \, \text{eV·nm}}{1000 \, \text{nm}} = 1.24 \, \text{eV}.  
+\]  
+Closest option: C- 1.2 eV.  
+\\ \textbf{Answer:} C- 1.2 eV.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An electron in the conduction band:  
+ 
+A- Has no charge \\  
+B- Is bound to its parent atom \\  
+C- Is located near the top of the crystal \\  
+D- Has higher energy than an electron in the valence band  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Conduction band electrons are  free to move  and have  higher energy  than valence band electrons.  
+\\ \textbf{Answer:} D- Has a higher energy than an electron in the valence band.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+At 0 K, the conduction band may be partially filled in:  
+A- Insulators only \\  
+B- Conductors only \\  
+C- Semiconductors only \\  
+D- Conductors and semiconductors  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+In  conductors , the conduction band is partially filled even at 0 K. Semiconductors/insulators have empty conduction bands.  
+\\ \textbf{Answer:} B- Conductors only.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+ Assertion (\\ a):  Conductivity of semiconductors increases on doping.  
+ Reason (R):  Doping always increases the number of electrons.  
+A- Both A and R are true, and R explains A \\  
+B- Both A and R are true, but R does not explain A \\  
+C- A is true, R is false \\  
+D- A and R are false  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Doping can increase  electrons (n-type)  or  holes (p-type) . R is false because doping doesn’t always add electrons.  
+\\ \textbf{Answer:} C- A is TRUE but R is FALSE.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Pure metals generally have:  
+
+A- High conductivity \& low temperature coefficient \\  
+B- High conductivity \& high temperature coefficient \\  
+C- Low conductivity \& zero temperature coefficient \\  
+D- Low conductivity \& high temperature coefficient  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Metals have  high conductivity  and  positive temperature coefficient  (resistance increases with temperature).  
+\\ \textbf{Answer:} B- High conductivity \& high temperature coefficient.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The cutoff wavelengths for Si (1.1 eV) and Ge (0.67 eV) photodiodes are:  
+A- 1850.27 nm, 2167.91 nm \\  
+B- 456.12 nm, 1127.27 nm \\  
+C- 1315.45 nm, 1850.75 nm \\  
+D- 1127.27 nm, 1850.75 nm  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\lambda = \frac{hc}{E_g} = \frac{1240 \, \text{eV·nm}}{E_g \, (\text{eV})}.  
+\]  
+- Si: \(\lambda = 1127.27 \, \text{nm}\)  
+- Ge: \(\lambda = 1850.75 \, \text{nm}\).  
+\\ \textbf{Answer:} D- 1127.27 nm, 1850.75 nm.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An intrinsic semiconductor at absolute zero behaves as:  
+
+A- An insulator \\  
+B- A semiconductor \\  
+C- A superconductor \\  
+D- A metallic conductor  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+At 0 K, intrinsic semiconductors have no free carriers \(\Rightarrow\) behave as insulators.  
+\\ \textbf{Answer:} A- An insulator.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A semiconductor doped with ppm-level impurities becomes:  
+A- Extrinsic semiconductor \\  
+B- Intrinsic semiconductor \\  
+C- Elemental semiconductor \\  
+D- Compound semiconductor  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Doped semiconductors are called  extrinsic .  
+\\ \textbf{Answer:} A- Extrinsic semiconductor.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+\begin{prp}
+\subsection{}
+In a PN junction with no external voltage, the electric field between acceptor and donor ions is called a:  
+A- Path \\  
+B- Peak \\  
+C- Barrier \\  
+D- Threshold  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+The built-in electric field is termed the  barrier potential .  
+\\ \textbf{Answer:} C- Barrier.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A hole refers to:  
+
+A- A proton \\  
+B- A positively charged electron \\  
+C- An electron that lost its charge \\  
+D- A microscopic defect \\  
+E- Absence of an electron in a filled band  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+A hole represents the  absence of an electron  in the valence band.  
+\\ \textbf{Answer:} E- Absence of an electron in an otherwise filled band.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Donor atoms introduced into a pure semiconductor at room temperature:  
+
+A- Increase conduction band electrons \\  
+B- Increase valence band holes \\  
+C- Lower Fermi level \\  
+D- Increase resistivity \\  
+E- None of the above  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Donor atoms (e.g., phosphorus) donate free electrons to the conduction band.  
+\\ \textbf{Answer:} A- Increase the number of electrons in the conduction band.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Acceptor atoms introduced into a pure semiconductor:  
+
+A- Increase conduction band electrons \\  
+B- Increase valence band holes \\  
+C- Raise Fermi level \\  
+D- Increase resistivity \\  
+E- None of the above  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Acceptor atoms (e.g., boron) create holes in the valence band.  
+\\ \textbf{Answer:} B- Increase the number of holes in the valence band.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+An acceptor atom in silicon has how many outer shell electrons?  
+
+A- 3 \\  
+B- 4 \\  
+C- 5 \\  
+D- 6 \\  
+E- 7  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Acceptor atoms (Group III) have  3 valence electrons  (e.g., boron).  
+\\ \textbf{Answer:} A- 3.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A donor atom in silicon has how many outer shell electrons?  
+
+A- 1 \\  
+B- 2 \\  
+C- 3 \\  
+D- 4 \\  
+E- 5  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Donor atoms (Group V) have  5 valence electrons  (e.g., phosphorus).  
+\\ \textbf{Answer:} E- 5.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Application of forward bias to a p-n junction:  
+A- Narrows depletion zone \\  
+B- Increases electric field \\  
+C- Increases potential difference \\  
+D- Increases n-side donors \\  
+E- Decreases n-side donors  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Forward bias reduces depletion zone width.  
+\\ \textbf{Answer:} A- Narrows the depletion zone.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Forward bias increases:  
+
+A- Drift current \\  
+B- Diffusion current \\  
+C- Decreases p-side drift \\  
+D- Decreases n-side drift \\  
+E- No current change  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Forward bias enhances  diffusion current  across the junction.  
+\\ \textbf{Answer:} B- Increases diffusion current.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+With forward bias, electron concentration on the p-side:  
+
+A- Slightly increases \\  
+B- Dramatically increases \\  
+C- Slightly decreases \\  
+D- Dramatically decreases \\  
+E- No change  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Forward bias injects electrons into the p-side, significantly increasing their concentration.  
+\textbf{Answer:} B- Increases dramatically.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+
+% Unit 15: Diodes (Ph.2.15)
+\section{DC and AC Circuits with Diodes (Ph.2.15).}
+
+\begin{prp}
+\subsection{}
+When a diode is in forward bias, ...  
+
+\\ a) Diffusion current increases. \\  
+b) Drift current increases. \\  
+c) Depletion layer thickens. \\  
+d) Potential barrier increases.  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Forward bias reduces barrier, allowing diffusion current.  
+\textbf{Answer:} \\ a) Diffusion current through the diode increases.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The capacitance of a reverse biased PN junction:  
+A- Increases as reverse bias is increased \\  
+B- Increases as reverse bias is decreased \\  
+C- Decreases as reverse bias is increased \\  
+D- Is insignificantly low  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Reverse bias widens the depletion layer, reducing capacitance (\(C \propto \frac{1}{\sqrt{V}}\)).  
+\textbf{Answer:} C- Decreases as reverse bias is increased.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The ripple voltage of a full-wave rectifier with a 100 μF filter capacitor and 50 mA load is:  
+
+A- 2.4 kV \\  
+B- 4.8 kV \\  
+C- 1.2 kV \\  
+D- 6.6 kV  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+V_{\text{ripple}} = \frac{I_{\text{load}}}{2fC} = \frac{0.05}{2 \cdot 50 \cdot 100 \times 10^{-6}}} = 5 \, \text{V}.
+\]  
+Note: Options are unrealistic. Closest logic: None match.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Reverse bias current in a PN junction diode is typically:  
+
+A- Few amperes \\  
+B- Few milliamperes \\  
+C- 0.2–15 A \\  
+D- Few micro/nano amperes  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Reverse saturation current is very small (μA/nA range).  
+\textbf{Answer:} D- Few micro or nano amperes.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+For a PN junction with \(N_A = N_D = 10^{20}/\text{cm}^3\) vs. \(10^{14}/\text{cm}^3\): 
+\\
+A- Lower breakdown voltage, lower capacitance \\  
+B- Higher breakdown voltage, lower capacitance \\  
+C- Lower breakdown voltage, higher capacitance \\  
+D- Higher breakdown voltage, higher capacitance  
+\end{prp}
+
+\begin{soln}    
+\textbf{Answer:} c- Lower breakdown voltage and higher capacitance.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+% Unit 16: Transistors and Logic Gates (Ph.2.16)
+\section{Transistors and Digital Logic (Ph.2.16).}
+
+\begin{prp}
+\subsection{}
+The output of an AND gate with three inputs (A, B, C) is HIGH when ...  
+
+\\ a) A=1, B=1, C=0 \\  
+b) A=0, B=0, C=0 \\  
+c) A=1, B=1, C=1 \\  
+d) A=1, B=0, C=1  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+AND gate requires all inputs HIGH.  
+\textbf{Answer:} c) A=1, B=1, C=1.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+How many inputs of a four-input OR gate must be HIGH for the output to go HIGH?  
+\\ a) Any one \\  
+b) Any two \\  
+c) Any three \\  
+d) All four  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+OR gate outputs HIGH if  at least one  input is HIGH.  
+\textbf{Answer:} a) Any one of the inputs.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+If a 3-input OR gate has eight input possibilities, how many result in HIGH output?  
+\\ a) 1 \\  
+b) 2 \\  
+c) 7 \\  
+d) 8  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Only  all zeros  gives LOW; 7 combinations have at least one HIGH.  
+\textbf{Answer:} c) 7.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+If a transistor’s Q-point is at the middle of the load line, decreasing current gain moves the Q-point:  \\
+A- Up \\  
+B- Down \\  
+C- Nowhere \\  
+D- Off the load line  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Lower \(\beta\) reduces collector current, shifting Q-point  downward .  
+\textbf{Answer:} B- Down.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The binary equivalent of 25 is:  \\
+A- 11010 \\  
+B- 10111 \\  
+C- 11001 \\  
+D- 10101  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\(25_{10} = 11001_2\).  
+\textbf{Answer:} C- 11001.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The output is LOW when any input is zero in a(n):  \\
+A- OR gate \\  
+B- NOT gate \\  
+C- AND gate \\  
+D- NAND gate  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+AND gate outputs HIGH  only if all inputs are HIGH 
+\textbf{Answer:} C- AND gate.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Common-base current gain (\(I_c = 4.0 \, \text{mA}, I_e = 4.2 \, \text{mA}\)): \\
+A- 0.20 \\  
+B- 0.95 \\  
+C- 1.05 \\  
+D- 16.80  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\alpha = \frac{I_c}{I_e} = \frac{4.0}{4.2} \approx 0.95.
+\]  
+\textbf{Answer:} B- 0.95.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Reverse saturation current in a diode is independent of: \\
+A- Temperature \\  
+B- Junction area \\  
+C- Potential barrier \\  
+D- Doping concentration  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Reverse saturation current depends on  temperature, doping, and area , not the barrier height.  
+\textbf{Answer:} C- Potential barrier.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Transistor biasing for amplifier operation requires: \\
+A- EB reverse, CB forward \\  
+B- EB forward, CB forward \\  
+C- EB reverse, CB reverse \\  
+D- EB forward, CB reverse  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Active mode:  EB forward ,  CB reverse .  
+\textbf{Answer:} D- EB forward, CB reverse.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Common-emitter DC current gain (\(\alpha = 0.9\)): \\
+A- 9 \\  
+B- 19 \\  
+C- 29 \\  
+D- 39  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\[
+\beta = \frac{\alpha}{1 - \alpha} = \frac{0.9}{0.1} = 9.
+\]  
+\textbf{Answer:} A- 9.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+NOT gate output is HIGH when: \\
+A- Input is HIGH \\  
+B- Input is LOW \\  
+C- Input changes LOW→HIGH \\  
+D- Voltage is removed  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+NOT gate inverts input: HIGH → LOW, LOW → HIGH.  
+\textbf{Answer:} B- Input is LOW.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Valid for both PNP and NPN transistors: \\
+A- Emitter injects holes into base \\  
+B- Electrons are minority carriers in base \\  
+C- EB junction forward biased \\  
+D- Current flows into emitter in active region  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+For active operation,  EB junction is always forward biased  (true for both types).  
+\textbf{Answer:} C- EB junction forward biased.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+The current ratio \( \frac{I_C}{I_E} \) is called: \\
+A- Beta \\  
+B- Theta \\  
+C- Alpha \\  
+D- Omega  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\( \alpha = \frac{I_C}{I_E} \).  
+\textbf{Answer:} C- Alpha.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Beta (\( \beta \)) is the ratio: \\
+A- \( \frac{I_C}{I_B} \) \\  
+B- \( \frac{I_C}{I_E} \) \\  
+C- \( \frac{I_E}{I_B} \) \\  
+D- \( \frac{I_E}{I_C} \)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\( \beta = \frac{I_C}{I_B} \).  
+\textbf{Answer:} A- \( \frac{I_C}{I_B} \).  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+A collector characteristic curve plots: \\
+A- \( I_E \) vs \( V_{CE} \) \\  
+B- \( I_C \) vs \( V_{CE} \) \\  
+C- \( I_C \) vs \( V_{CC} \) \\  
+D- \( I_E \) vs \( V_{CC} \)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Collector current (\( I_C \)) vs \( V_{CE} \) at constant \( V_{BB} \).  
+\textbf{Answer:} B- \( I_C \) versus \( V_{CE} \).  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+For a silicon transistor in C-E configuration, \( V_{BE} \) is: \\
+A- Voltage-divider bias \\  
+B- 0.3 V \\  
+C- 0.7 V \\  
+D- 0.0 V  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Silicon transistors require \( V_{BE} \approx 0.7 \, \text{V} \) for forward bias.  
+\textbf{Answer:} C- 0.7 V.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+In a PNP circuit, the most positive voltage is: \\
+A- Ground \\  
+B- \( V_C \) \\  
+C- \( V_{BE} \) \\  
+D- \( V_{CC} \)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+In PNP transistors, the emitter is connected to the highest positive voltage (often ground in some configurations).  
+\textbf{Answer:} A- Ground.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Most electrons in the base of an NPN transistor flow: \\
+A- Out of the base lead \\  
+B- Into the collector \\  
+C- Into the emitter \\  
+D- Into the base supply  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+Electrons from the emitter are collected by the collector.  
+\textbf{Answer:} B- Into the collector.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Collector current is controlled by: \\
+A- Collector voltage \\  
+B- Base current \\  
+C- Collector resistance \\  
+D- All of the above  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\( I_C \) is proportional to \( I_B \) in active mode.  
+\textbf{Answer:} B- Base current.  
+\end{soln}
+
+\bigskip
+\centerline{\rule{10cm}{0.4pt}}
+\bigskip
+
+\begin{prp}
+\subsection{}
+Total emitter current is: \\
+A- \( I_E - I_C \) \\  
+B- \( I_C + I_E \) \\  
+C- \( I_B + I_C \) \\  
+D- \( I_B - I_C \)  
+\end{prp}
+
+\begin{soln}
+\textbf{Solution:}  
+\( I_E = I_B + I_C \).  
+\textbf{Answer:} C- \( I_B + I_C \).  
+\end{soln}
+
+\HRule \vspace{0.5cm}
+\center
+\color{black}
+{
+\< وَفْقَكُمْ اللَّهُ رَبُّ الْعَالَمِينَ >
+ \\[0.15cm]}
+{ \large \bfseries STEM High School for Boys - 6th of October \\[0.15cm]}
+{ \bfseries Omar Yahya - Yaseen Saad-Eldin \\[0.5cm]}
+\HRule \\[0.5cm]
+\includegraphics[scale=.08]{download.png} \\[.5cm]
+\vspace*{\fill}
+
+\end{document}
